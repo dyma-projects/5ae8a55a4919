@@ -1,0 +1,15 @@
+<input [value]="nom" (input)="nom=$event.target.value" >
+<p>
+  Bonjour {{nom}}
+</p>
+<p>
+<input [type]="inputType" [(ngModel)]="nombre">
+<span>{{nombre}}</span>
+</p>
+<button (click)="changeStatus()">P1/P2</button>
+<p *ngIf="status">p1</p>
+<p *ngIf="!status">p2</p>
+
+<ul>
+  <li *ngFor="let text of texts">{{text}}</li>
+</ul>
